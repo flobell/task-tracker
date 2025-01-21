@@ -19,6 +19,8 @@ def commands():
     add_parser.set_defaults(func=add)
 
     update_parser = subparsers.add_parser("update", help="Update a task")
+    update_parser.add_argument("task_id", type=int, help="The ID of the task to update")
+    update_parser.add_argument("description", type=str, help="The new description of the task")
     update_parser.set_defaults(func=update)
 
     delete_parser = subparsers.add_parser("delete", help="Delete a task")
