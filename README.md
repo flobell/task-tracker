@@ -38,7 +38,7 @@ python setup.py install
 ### Execute unit tests
 
 ```
-python -m unittest discover -s tests -p "test_*.py"
+python -m unittest discover -s tests
 ```
 
 ---
