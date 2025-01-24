@@ -3,7 +3,14 @@ A command-line tool for managing your tasks efficiently. You can add, update, de
 
 ---
 
-## Installation
+## Installation End-User Usage
+
+### 1. Easy install with Pip
+```bash
+pip install git+https://github.com/flobell/task-tracker.git  
+```
+
+## Installation Dev
 
 ### 1. Clone the Repository
 ```bash
@@ -11,7 +18,7 @@ git clone https://github.com/flobell/task-tracker.git
 cd task-tracker
 ```
 
-### 2. Clone the Repository
+### 2. Create virtual environment
 ```bash
 python -m venv venv
 ```
@@ -30,7 +37,7 @@ source venv/bin/activate
 ### 4. Install project package
 
 ```bash
-python setup.py install
+pip install .
 ```
 
 ## Unit Testing
@@ -92,6 +99,7 @@ task-cli list in-progress
 ## Notes
 - Task IDs are auto-incremented and unique.
 - Statuses are case-insensitive but should follow the format: `todo`, `in progress`, or `done`.
+- Task are stored in a temporary file to avoid cluttering the user's working directory
 
 
 ## Project URL

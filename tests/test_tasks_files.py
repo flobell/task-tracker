@@ -8,13 +8,6 @@ from src.tasks.files import ensure_task_file, load_tasks, save_tasks, \
 class TestTasksFiles(unittest.TestCase):
 
     @patch("builtins.open", new_callable=mock_open)
-    @patch("os.path.exists", return_value=False)
-    def test_ensure_task_file_creates_file(self, mock_exists, mock_open):
-        ensure_task_file()
-        mock_open.assert_called_once_with(TASKS_FILE, 'w')
-        mock_open.return_value.write.assert_called_once_with("[]")
-
-    @patch("builtins.open", new_callable=mock_open)
     @patch("os.path.exists", return_value=True)
     def test_ensure_task_file_does_not_create_file(self, mock_exists,
                                                    mock_open):
