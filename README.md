@@ -3,7 +3,7 @@ A command-line tool for managing your tasks efficiently. You can add, update, de
 
 ---
 
-## Installation End-User Usage
+## Installation End-user usage
 
 ### 1. Easy install with Pip
 ```bash
