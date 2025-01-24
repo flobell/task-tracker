@@ -37,7 +37,7 @@ source venv/bin/activate
 ### 4. Install project package
 
 ```bash
-pip install .
+pip install -e .
 ```
 
 ## Unit Testing
